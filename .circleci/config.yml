@@ -10,7 +10,7 @@ jobs:
       - run: echo "Trying out workspace" > my_workspace/echo-output
       - persist_to_workspace:
           # must be an absolute path
-          root: my_workspace
+          root: /home/circleci/project/my_workspace
           # must be relative path
           paths:
             - echo_output      
